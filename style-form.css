@@ -32,3 +32,31 @@
     color: #051C24;
     transition: background-color 0.7s;
 }
+
+/* HIDE RADIO */
+.note input { 
+    position: absolute;
+    width: 0;
+    height: 0;
+
+}
+
+/* IMAGE STYLES */
+.note img{
+    filter: opacity(0.3);
+}
+.note img + input {
+    cursor: pointer;
+}
+
+/* CHECKED STYLES */
+.note input:checked + img{
+    filter: opacity(1);
+}
+
+.EmojoNoteDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75%;
+}

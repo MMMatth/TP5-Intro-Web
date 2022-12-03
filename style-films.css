@@ -20,6 +20,7 @@ body{
     position: relative;
     display: flex;
     justify-content: center;
+    z-index: -200;
 }
 
 .imagefilm{
@@ -27,6 +28,7 @@ body{
     position:relative;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    
 }
 
 #ombre{
@@ -36,7 +38,7 @@ body{
     top:0;
     bottom:0;
     z-index:10;
-    box-shadow: inset 0em -1em 30px rgba(26, 26, 26, 1);
+    background: linear-gradient(0deg,#1a1a1a,transparent 50%);
     
 }
 
@@ -83,10 +85,19 @@ table thead tr th{
     justify-content: center;
 }
 .footer{
-    width: 100%;
     margin-left: 2%;
     padding-bottom: 20px;
 }
 .source{
     margin-left: 2%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #007198;
+    text-decoration: underline;
+    transition: ease-in-out 0.3s;
 }

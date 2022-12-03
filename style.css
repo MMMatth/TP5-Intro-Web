@@ -50,12 +50,12 @@ nav img{
     text-decoration: none;
     padding: 0.5em;
     margin: 0.5em;
+    transition: background-color 0.7s;
     
 }
 .menu .items:hover{
     background-color: #051C24;
     color : #007198;
-    transition: background-color 0.7s;
 }
 /* Partie de droite */
 main{
@@ -72,7 +72,6 @@ header{
 }
 aside{
     padding: 0.5em;
-    width: 98%;
     height:auto;
     position:relative;
     display: flex;
