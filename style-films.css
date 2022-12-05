@@ -44,7 +44,8 @@ body{
 
 .Titre{
     color: white;
-    margin-left: 50px;
+    margin-left: 8%;
+    margin-top: -10%;
 }
 .Titre h1{
     font-size: 50px;
@@ -58,7 +59,8 @@ body{
 }
 
 .informations{
-margin-left: 20%;
+    margin-left: 20%;
+    margin-top: 7%;
 }
 
 .pegi{
@@ -100,4 +102,16 @@ a:hover{
     color: #007198;
     text-decoration: underline;
     transition: ease-in-out 0.3s;
+}
+
+@media (max-width: 768px){
+    .informations{
+        margin-left: 2%;
+    }
+}
+
+@media (min-width: 2000px){
+    .informations{
+        margin-left: 10%;
+    }
 }
