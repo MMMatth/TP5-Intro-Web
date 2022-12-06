@@ -22,27 +22,23 @@
                 <h1>Formulaire</h1>
             </header>
         <aside>
-            <div class = "form">
+            <form class="form">
                 <label class="txt" for="nom">Nom</label>
-                    <input type="text" name="nom" class="input">
+                    <input type="text" name="nom" class="input" required>
                 <label class="txt" for="prenom">Prenom</label>
-                    <input type="text" name="prenom" class="input">
+                    <input type="text" name="prenom" class="input" required>
                 <label class="txt" for="email">Email</label>
-                    <input type="email" name="email" class="input">
+                    <input type="email" name="email" class="input" required>
                 <label class="txt" for="satisfaction">Satisfaction</label>
-                    <!--<select name="satisfaction" class="input">
-                        <option class = "items" value="tres satisfait">Très satisfait</option>
-                        <option class = "items" value="satisfait">Satisfait</option>
-                        <option class = "items" value="pas satisfait">Pas satisfait</option>
-                    </select>--> 
+
                     
                     <div class="EmojoNoteDiv">
                         <label class='note'>
-                            <input class="radioInputNote" type="radio" name="satisfaction" value='2'>
+                            <input class="radioInputNote" type="radio" name="satisfaction" value='2' required>
                             <img src="../Image/Emoji/2.png" alt="" draggable="false" width="40px">
                         </label>
                         <label class="note">
-                            <input type="radio" name="satisfaction" value='1'>
+                            <input type="radio" name="satisfaction" value='1' required>
                             <img src="../Image/Emoji/1.png" draggable="false" width="40px">
                         </label>
                         <label class="note">
@@ -50,11 +46,11 @@
                             <img src="../Image/Emoji/0.png" draggable="false" width="40px">
                         </label>
                         <label class="note">
-                            <input type="radio" name="satisfaction" value='-1'>
+                            <input type="radio" name="satisfaction" value='-1' required>
                             <img src="../Image/Emoji/-1.png" draggable="false" width="40px">
                         </label>
                         <label class="note">
-                            <input type="radio" name="satisfaction" value='-2'>
+                            <input type="radio" name="satisfaction" value='-2' required>
                             <img src="../Image/Emoji/-2.png" draggable="false" width="40px">
                         </label>
                     </div>
@@ -63,7 +59,8 @@
                 <label class="txt" for="commentaire">Commentaire</label>
                     <textarea name="commentaire" id="commentaire" cols="30" rows="10" class="input"></textarea>
                 <input class = "button" type="submit" value="Envoyer">
-            </div>
+                <input class = "button" type="reset" value="Supprimer">
+            </form>
         </aside>
     </main>
 </body>
