@@ -1,0 +1,47 @@
+#box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.case{
+    width: 200px; 
+    height: 600px;
+    margin: 10px;
+    border-radius: 20px; /* pour arrondir les coins */
+    transition: 0.5s; /* pour la transition quand on s'enleve de au dessus de l'image */
+    background-size: cover; /* pour que l'image prenne toute la taille de la div */
+    background-position: center; /* pour centrer l'image */
+}
+#case1{
+    background-image: url("Image/PageFilm/Sonic.jpg"); /* pour mettre l'image en fond */
+}
+#case2{
+    background-image: url("Image/PageFilm/Titanic.jpg");
+}
+#case3{
+    background-image: url("Image/PageFilm/Avatar.jpg");
+}
+#case4{
+    background-image: url("Image/PageFilm/Interstellar.jpg");
+}
+.case:hover{
+    transition: 0.5s; /* pour la transition quand on est au dessus de l'image */
+    width: 350px; /* pour agrandir l'image */
+}
+@media screen and (max-width: 1920px){
+    .case{
+        height: 500px;
+    }
+}
+    
+@media screen and (max-width: 1130px){
+    #box{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .case{
+        width: 350px;
+        height: 500px;
+    }
+}
