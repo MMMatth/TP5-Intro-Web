@@ -12,6 +12,8 @@
     padding: 0.5em;
     border-radius: 10px;
     border: 1px solid #051C24;
+    max-width: 100%;
+    min-height: 20px;
 }
 #form .items{
     font-size: 1.5em;
@@ -44,6 +46,7 @@
 /* IMAGE STYLES */
 .note img{
     filter: opacity(0.3);
+    transition: filter 0.5s;
 }
 .note img + input {
     cursor: pointer;
