@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../mainstyle.css">
+    <link rel="stylesheet" href="../style-form.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <nav>
+        <img src="../Image/Icone.gif">
+        <div class="menu">
+            <a class="items" href="../index.html">Accueil</a>
+            <a class="items" href="#">Vos retours</a>
+            <a class="items" href="../source.html" >Source</a>
+        </div>
+    </nav>
+        <main>
+            <header>
+                <h1>Formulaire</h1>
+            </header>
+        <aside>
+            <form id="form">
+                <label class="txt" for="nom">Nom</label>
+                    <input type="text" name="nom" class="input" required>
+                <label class="txt" for="prenom">Prenom</label>
+                    <input type="text" name="prenom" class="input" required>
+                <label class="txt" for="email">Email</label>
+                    <input type="email" name="email" class="input" required>
+                <label class="txt" for="satisfaction">Satisfaction</label>
+
+                <div id="emoji_div">
+                    <label class='note'>
+                        <input class="radioInputNote" type="radio" name="satisfaction" value='2' required>
+                        <img src="../Image/Emoji/2.png" alt="" draggable="false" width="40px">
+                    </label>
+                    <label class="note">
+                        <input type="radio" name="satisfaction" value='1' required>
+                        <img src="../Image/Emoji/1.png" draggable="false" width="40px">
+                    </label>
+                    <label class="note">
+                        <input type="radio" name="satisfaction" value='0' checked>
+                        <img src="../Image/Emoji/0.png" draggable="false" width="40px">
+                    </label>
+                    <label class="note">
+                        <input type="radio" name="satisfaction" value='-1' required>
+                        <img src="../Image/Emoji/-1.png" draggable="false" width="40px">
+                    </label>
+                    <label class="note">
+                        <input type="radio" name="satisfaction" value='-2' required>
+                        <img src="../Image/Emoji/-2.png" draggable="false" width="40px">
+                    </label>
+                </div>
+                    
+                <label class="txt" for="commentaire">Commentaire</label>
+                    <textarea name="commentaire" id="commentaire" cols="30" rows="10" class="input"></textarea>
+                <!-- pied de formulaire -->
+                <div id = "footer">
+                    <input class = "button" type="submit" value="Envoyer">
+                    <input class = "button" type="reset" value="Supprimer">
+                </div>
+            </form>
+        </aside>
+    </main>
+</body>
+</html>

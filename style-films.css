@@ -24,7 +24,8 @@ body{
 }
 
 .imagefilm{
-    width:90%;
+    margin-top: 2%;
+    width:70%;
     position:relative;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -42,9 +43,10 @@ body{
     
 }
 
+
 .Titre{
     color: white;
-    margin-left: 8%;
+    margin-left: 18%;
     margin-top: -10%;
 }
 .Titre h1{
@@ -59,7 +61,7 @@ body{
 }
 
 .informations{
-    margin-left: 20%;
+    margin-left: 5%;
     margin-top: 7%;
 }
 
@@ -83,8 +85,7 @@ table thead tr th{
 .tableau{
     margin-top: 60px;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    margin-left: 50px;
 }
 .footer{
     margin-left: 2%;

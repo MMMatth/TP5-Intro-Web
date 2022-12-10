@@ -14,16 +14,16 @@
     background-position: center; /* pour centrer l'image */
 }
 #case1{
-    background-image: url("Image/PageFilm/Sonic.jpg"); /* pour mettre l'image en fond */
+    background-image: url("Image/p_film/sonic.jpg"); /* pour mettre l'image en fond */
 }
 #case2{
-    background-image: url("Image/PageFilm/Titanic.jpg");
+    background-image: url("Image/p_film/titanic.jpg");
 }
 #case3{
-    background-image: url("Image/PageFilm/Avatar1.jpg");
+    background-image: url("Image/p_film/avatar.jpg");
 }
 #case4{
-    background-image: url("Image/PageFilm/Interstellar.jpg");
+    background-image: url("Image/p_film/interstellar.jpg");
 }
 .case:hover{
     transition: 0.5s; /* pour la transition quand on est au dessus de l'image */
