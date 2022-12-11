@@ -11,20 +11,22 @@ body{
     font-family: 'Roboto', sans-serif;
     background: #1a1a1a;
     color : white;
+    min-width: 600px;
 }
 
 
 
 /* MENU */
 nav{
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* On affiche en Colone les éléments */
+    justify-content: space-between; /* On affiche le menu en bas et l'icone en haut */
     flex-direction: column;
     background-color: #007198;
     font-size : 1.5em;
-    position: fixed;
+    position: fixed; /* Empeche son deplacement */
     height: 100%;
     width: 200px;
+    z-index: 10; /* on le met au dessus de tout */
 }
 nav img{
     width: 75px;
@@ -36,13 +38,12 @@ nav img{
 .menu{
     display: flex;
     justify-content: flex-end;
-    flex-direction: column;
-
+    flex-direction: column; 
 }
 
 /* les items dans le menu */
 .menu #top{
-    justify-self: unset;
+    justify-self: unset; 
 }
 
 .menu .items{

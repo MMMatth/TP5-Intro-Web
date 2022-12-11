@@ -2,118 +2,117 @@ body{
     height: 100%;
 }
 
-@keyframes haut-bas { /* animation pour le titre/Image */
+@keyframes haut-bas { /* Animation de l'entête */
     0%{
         opacity: 0;
-        transform: translateY(-80%); /* pour que le titre/image arrive de haut */
+        transform: translateY(-80%); /* Animation de descente */
     }
     100%{
         opacity: 1;
         transform: translateY(0);
     }
 }   
-.anim{ /* animation pour le titre */
-    animation: haut-bas 1s ease-in-out; 
+.anim{ /* Animation de l'entête */
+    animation: haut-bas 1s ease-in-out;
 }
 
-.EnteteImg{ /* image de l'entete */
+.EnteteImg{ /* Image de l'entête */
     position: relative;
     display: flex;
     justify-content: center;
     z-index: -200;
 }
 
-.imagefilm{ /* image du film */
-    width:90%;
-    position:relative; 
+.imagefilm{ /* Image de l'entête */
+    margin-top: 2%;
+    width:70%;
+    position:relative;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     
 }
 
-#ombre{ /* ombre de l'image */
-    position:absolute; /* pour que l'ombre soit au dessus de l'image */
+#ombre{ /* Ombre de l'image de l'entête */
+    position:absolute;
     left:0;
     right:0;
     top:0;
     bottom:0;
-    z-index:10; /* pour que l'ombre soit au dessus de l'image */
-    background: linear-gradient(0deg,#1a1a1a,transparent 50%); /* dégradé de l'ombre */
+    z-index:10; 
+    background: linear-gradient(0deg,#1a1a1a,transparent 50%); /* Ombre vers le haut de l'entête */
     
 }
 
-.Titre{ /* titre du film */
+
+.Titre{ /* Titre de l'entête */
     color: white;
-    margin-left: 8%; /* pour que le titre soit aligné avec le reste du texte */
-    margin-top: -10%; 
+    margin-left: 18%;
+    margin-top: -10%; /* Pour que le titre soit au dessus de l'image */
 }
-.Titre h1{ /* titre du film */
+.Titre h1{
     font-size: 50px;
     font-weight: bold;
     margin-bottom: -5px;
 }
-.petiteInfo{ /* petite info du film */
-    display: flex; /* pour mettre les deux infos sur la même ligne */
+.petiteInfo{
+    display: flex; /* Affichage en ligne */
     flex-direction: row; 
     align-items: center;
 }
 
-.informations{ /* informations du film */
-    margin-left: 20%;
+.informations{ /* Informations de l'entête - Synopsis */
+    margin-left: 5%;
     margin-top: 7%;
-    width: 70%;
 }
 
-.pegi{ /* image du pegi */
-    font-size: 12px; 
-    padding: 4px; /* taille du pegi */
-    background-color: #007198; /* couleur du fond du pegi */
-    border-radius: 3px;
+.pegi{ /* PEGI de l'entête */
+    font-size: 12px;
+    padding: 4px; /* Espacement / taille du pegi */
+    background-color: #007198;
+    border-radius: 3px; /* Arrondi des coins */
 }
 
-table tbody tr th{ /* tableau */
+table tbody tr th{  /* Tableau */
     text-align: end;
 }
-table tbody tr td{ /* tableau */
+table tbody tr td{
     text-align:left;
-    background-color: rgba(0,0,0,0.8); 
+    background-color: rgba(0,0,0,0.8);
 }
-table thead tr th{ /* tableau */
-    text-decoration: underline; /* soulignement du titre du tableau */
+table thead tr th{
+    text-decoration: underline;
 }
-.tableau{ /* tableau */
+.tableau{
     margin-top: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    margin-left: 50px;
 }
-.footer{ /* footer */
+.footer{ /* Pied de page */
     margin-left: 2%;
     padding-bottom: 20px;
 }
-.source{ /* source */
+.source{
     margin-left: 2%;
 }
-a{ /* lien */
+a{ /* Lien */
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* Enlever soulignement */
     font-weight: bold;
-    transition: ease-in-out 0.3s; /* transition du lien */
+    transition: ease-in-out 0.3s;
 }
 
-a:hover{ /* lien survol*/
+a:hover{ /* Lien survolé */
     color: #007198;
     text-decoration: underline;
     
 }
 
-@media (max-width: 768px){ /* responsive Telephone*/
+@media (max-width: 768px){ /* Responsive Telephone*/
     .informations{
         margin-left: 2%;
     }
 }
 
-@media (min-width: 2000px){ /* responsive Ipad*/
+@media (min-width: 2000px){ /* Responsive Ipad*/
     .informations{
         margin-left: 10%;
     }

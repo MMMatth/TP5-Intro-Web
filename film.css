@@ -11,37 +11,38 @@
     border-radius: 20px; /* pour arrondir les coins */
     transition: 0.5s; /* pour la transition quand on s'enleve de au dessus de l'image */
     background-size: cover; /* pour que l'image prenne toute la taille de la div */
-    background-position: center; /* pour centrer l'image */
+    background-position: center; /* pour centrer le background dans la div */
 }
-#case1{
-    background-image: url("Image/PageFilm/Sonic.jpg"); /* pour mettre l'image en fond */
+#case1{ /* On pouvait ne pas mettre d'id et utiliser firth-child*/
+    background-image: url("Image/p_film/sonic.jpg"); /* pour mettre l'image en fond, permet sa transformation horizontale */
 }
 #case2{
-    background-image: url("Image/PageFilm/Titanic.jpg");
+    background-image: url("Image/p_film/titanic.jpg");
 }
 #case3{
-    background-image: url("Image/PageFilm/Avatar.jpg");
+    background-image: url("Image/p_film/avatar.jpg");
 }
 #case4{
-    background-image: url("Image/PageFilm/Interstellar.jpg");
+    background-image: url("Image/p_film/interstellar.jpg");
 }
-.case:hover{
+
+.case:hover{ /* pour la transition quand on est au dessus de l'image */
     transition: 0.5s; /* pour la transition quand on est au dessus de l'image */
     width: 350px; /* pour agrandir l'image */
 }
-@media screen and (max-width: 1920px){
+@media screen and (max-width: 1920px){ /* pour les ecrans de 1920px et moins*/
     .case{
-        height: 500px;
+        height: 500px; /* pour que les images soient plus petites */
     }
 }
     
-@media screen and (max-width: 1240px){
+@media screen and (max-width: 1240px){ /* pour les ecrans de 1240px et moins*/
     #box{
-        flex-wrap: wrap;
-        align-items: center;
+        flex-wrap: wrap; /* pour que les images se mettent les unes en dessous des autres */
+        align-items: center; /* pour centrer les images */
     }
     .case{
-        width: 350px;
+        width: 350px; 
         height: 500px;
     }
 }

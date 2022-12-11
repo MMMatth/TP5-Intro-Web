@@ -1,13 +1,14 @@
-#form{
-    display: flex; /* pour que les éléments soient alignés Verticalement */
+form{ /* Pour le formulaire */
+    width: 75%;
+    display: flex;
     flex-direction: column;
-    width: 75%; /* pour que le formulaire ne prenne pas toute la page */
+    align-self: center;
 }
-#form .txt{
+form .txt{
     margin: 0.5em;
     font-size: 1.5em;
 }
-#form .input{ /* pour les input */
+form .input{
     margin: 0.5em;
     padding: 0.5em;
     border-radius: 10px;
@@ -15,13 +16,14 @@
     max-width: 100%;
     min-height: 20px;
 }
-#form .items{ /* pour les select */
+form .items{
     font-size: 1.5em;
 }
-#form .button{ /* pour les boutons */
-    margin: 0.25em; /* pour que les boutons ne soient pas collés */
-    padding: 0.25em; 
-    border-radius: 10px; /* pour arrondir les coins */
+form .button{
+    min-width: 155px; /* Taille minimum en largeur du bouton */
+    margin: 0.25em;
+    padding: 0.25em;
+    border-radius: 10px;
     background-color: #051C24;
     color: #007198;
     font-size: 1.5em;
@@ -29,15 +31,15 @@
     transition: background-color 0.7s;
 }
 
-#form .button:hover{ /* pour les boutons */
+form .button:hover{
     background-color: #007198;
     color: #051C24;
     transition: background-color 0.7s;
 }
 
 /* HIDE RADIO */
-.note input {  
-    position: absolute; /* pour que l'input soit cachée */
+.note input { 
+    position: absolute;
     width: 0;
     height: 0;
 
@@ -46,20 +48,29 @@
 /* IMAGE STYLES */
 .note img{
     filter: opacity(0.3);
-    transition: filter 0.5s; /* pour la transition quand on selection ou non l'image */
+    transition: filter 0.5s;
 }
 .note img + input {
-    cursor: pointer; /* pour que le curseur change quand on passe au dessus de l'image */
-} 
+    cursor: pointer; /* Pour que au survol de l'image, le curseur change*/
+}
 
 /* CHECKED STYLES */
 .note input:checked + img{
     filter: opacity(1);
 }
 
-.EmojoNoteDiv{ /* pour les émojis */
+#emoji_div{  
+    display: flex; /* Affichage en ligne */
+    flex-direction: row;
+    justify-content: space-around; /* Pour que les émojis soient espacés */
+    align-self: center  ; /* Pour que les émojis soient centrés */
+    width: 75%;
+}
+form #footer{
     display: flex;
-    flex-direction: row; 
-    justify-content: space-around; /* pour que les émojis soient espacés */
-    width: 75%; 
+    flex-direction: row;
+    justify-content: space-around; /* Pour que les boutons soient espacés */
+}
+#footer .button{ 
+    width: 32.5%;
 }
