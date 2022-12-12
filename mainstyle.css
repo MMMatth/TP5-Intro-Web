@@ -1,4 +1,5 @@
-/* 
+/* fichier css qui est appliqué à tout les fichiers */
+/* Nos couleurs :
 #04BBFF
 #0594D0
 #007198
@@ -20,63 +21,58 @@ body{
 nav{
     display: flex; /* On affiche en Colone les éléments */
     justify-content: space-between; /* On affiche le menu en bas et l'icone en haut */
-    flex-direction: column;
-    background-color: #007198;
-    font-size : 1.5em;
+    flex-direction: column; /* On affiche en Colone les éléments */
+    background-color: #007198; 
+    font-size : 1.5em; 
     position: fixed; /* Empeche son deplacement */
-    height: 100%;
-    width: 200px;
+    height: 100%; /* Hauteur du menu */
+    width: 200px; /* Largeur du menu */
     z-index: 10; /* on le met au dessus de tout */
 }
-nav img{
-    width: 75px;
+nav img{ /* On met l'image en haut ( l'icon ) */
+    width: 75px; 
     margin-top: 30px;
     align-self: center;
-    /* on eleve le blanc */
-
 }
-.menu{
+.menu{ /* on gère la partie bas du menu */
     display: flex;
     justify-content: flex-end;
     flex-direction: column; 
 }
 
-/* les items dans le menu */
-.menu #top{
-    justify-self: unset; 
-}
-
 .menu .items{
-    color: #051C24;
-    font-weight: bold;
-    text-decoration: none;
+    color: #051C24; /* Couleur du texte */
+    text-decoration: none; /* On enleve le soulignement automatique */
+    font-weight: bold; /* On met en gras */
     padding: 0.5em;
     margin: 0.5em;
-    transition: background-color 0.7s;
+    transition: .7s; /* Animation de changement de couleur */
     
 }
 .menu .items:hover{
-    background-color: #051C24;
+    /* On inverse la couleur du fond et la police */
+    background-color: #051C24; 
     color : #007198;
 }
 /* Partie de droite */
+/* main comprend le header et le aside */
 main{
+    /* On la décale de la taille du menu */
     margin-left: 200px; 
 }
+/* le titre au dessus de chaque page */
 header{
     background-color: #003C57;
     color: #04BBFF;
     font-size: 1.5em;
-    font-weight: bold;
     padding: 0.5em;
     text-align: center;
-    margin: auto;
 }
+/* la partie en bas a droite */
 aside{
-    padding: 0.5em;
+    padding: .5em;
     height:auto;
     position:relative;
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
